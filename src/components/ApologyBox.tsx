@@ -88,7 +88,7 @@ const ApologyBox = () => {
                 {/* Main apology message */}
                 <div className="space-y-4 text-foreground/80 leading-relaxed">
                   <p className="text-lg font-medium text-primary">
-                    Hey, I am truly sorry for what happened that night. 😟
+                    Hey Mannat, I am truly sorry for what happened that night. 😟
                   </p>
                   
                   <p>
@@ -100,7 +100,7 @@ const ApologyBox = () => {
                   </p>
                   
                   <p className="font-semibold text-primary">
-                    I am truly sorry for that and I hope you will forgive me. 🥰💕
+                    I am truly sorry for that and I hope you will forgive me, Mannat. 🥰💕
                   </p>
                   
                   <div className="bg-primary/10 rounded-2xl p-4 mt-6">
@@ -114,11 +114,9 @@ const ApologyBox = () => {
 
                 {/* Decorative elements */}
                 <div className="flex justify-center space-x-4 pt-4">
-                  <Heart className="text-heart-glow animate-pulse-heart" size={20} />
                   <div className="text-xl animate-sparkle">🌸</div>
                   <Sparkles className="text-primary animate-float" size={20} />
                   <div className="text-xl animate-bounce-gentle">💫</div>
-                  <Heart className="text-heart-glow animate-pulse-heart" size={20} />
                 </div>
 
                 {/* Final message */}
