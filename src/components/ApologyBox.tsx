@@ -80,20 +80,9 @@ const ApologyBox = () => {
                 </div>
 
                 {/* Apology message */}
-                <div className="space-y-4 text-foreground/80 leading-relaxed">
-                  <p>
-                    I want you to know that I'm truly sorry for what happened. 
-                    Your friendship means the world to me, and I hate that my actions 
-                    may have hurt you.
-                  </p>
-                  
-                  <p>
-                    I've been thinking about this a lot, and I realize I was wrong. 
-                    I should have been more thoughtful and considerate of your feelings.
-                  </p>
-                  
-                  <p className="font-medium text-primary">
-                    You deserve better from me, and I promise to do better going forward.
+                <div className="text-foreground/80 leading-relaxed">
+                  <p className="text-lg font-medium text-primary">
+                    hey, i am truly sorry for that night.
                   </p>
                 </div>
 
