@@ -52,6 +52,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Custom apology app colors
+				'box-closed': 'hsl(var(--box-closed))',
+				'box-open': 'hsl(var(--box-open))',
+				'heart-glow': 'hsl(var(--heart-glow))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -82,13 +86,48 @@ export default {
 						height: 'var(--radix-accordion-content-height)'
 					},
 					to: {
-						height: '0'
+						height: 'var(--radix-accordion-content-height)'
+					}
+				},
+				'box-open': {
+					'0%': {
+						transform: 'scale(1) rotateY(0deg)',
+						opacity: '1'
+					},
+					'50%': {
+						transform: 'scale(1.1) rotateY(-10deg)',
+						opacity: '0.8'
+					},
+					'100%': {
+						transform: 'scale(1.2) rotateY(0deg)',
+						opacity: '1'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'pulse-heart': {
+					'0%, 100%': {
+						transform: 'scale(1)',
+						filter: 'drop-shadow(0 0 20px hsl(var(--heart-glow) / 0.4))'
+					},
+					'50%': {
+						transform: 'scale(1.1)',
+						filter: 'drop-shadow(0 0 30px hsl(var(--heart-glow) / 0.6))'
 					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'box-open': 'box-open 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-heart': 'pulse-heart 2s ease-in-out infinite'
 			}
 		}
 	},
